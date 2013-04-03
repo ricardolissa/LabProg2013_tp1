@@ -1,5 +1,6 @@
+Laboratorio de Programación y Lenguajes. Universidad Nacional de Tierra del Fuego
 
-Laboratorio de Programación y Lenguajes TP Nº1
+TP Nº1 Patrones
 ==============================================
 
 
