@@ -1,6 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, chooose Tools | Templates
+ * and open the template in  editor.
  */
 package ar.edu.untdf.labprog.tp1.ejer1;
 
