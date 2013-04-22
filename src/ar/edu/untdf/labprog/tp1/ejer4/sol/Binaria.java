@@ -11,18 +11,19 @@ package ar.edu.untdf.labprog.tp1.ejer4.sol;
 public class Binaria implements Busqueda 
 {
 
-  public boolean contains(Integer[] a, Integer b) {
-    if (a.length == 0) {
+  public boolean buscar(int[] lista, int a) {
+    
+      if (lista.length == 0) {
       return false;
     }
     int low = 0;
-    int high = a.length-1;
+    int high = lista.length-1;
 
     while(low <= high) {
       int middle = (low+high) /2; 
-      if (b> a[middle]){
+      if (a> lista[middle]){
         low = middle +1;
-      } else if (b< a[middle]){
+      } else if (a< lista[middle]){
         high = middle -1;
       } else { // The element has been found
         return true; 
@@ -30,5 +31,6 @@ public class Binaria implements Busqueda
     }
     return false;
   }
-     
+
+       
 }

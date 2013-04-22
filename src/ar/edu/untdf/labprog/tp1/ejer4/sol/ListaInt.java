@@ -9,7 +9,8 @@ package ar.edu.untdf.labprog.tp1.ejer4.sol;
  * @author Matias
  */
 
-public class ListaInt {
+public class ListaInt 
+{
 
     private Ordenamiento o = null;
     private Busqueda a = null;
@@ -19,21 +20,29 @@ public class ListaInt {
      this.o=o;    
     }
     
+    public void setBusqueda(Busqueda a){
+    this.a=a;
+    } 
     public ListaInt(int[] list){
     lista=list;
     } 
-    public void bus(Busqueda a)
+    
+    
+    
+    
+    public void bus(int[]lista, int b)
     {
-    this.a=a;
+     if (a.buscar(lista, b) == true)
+     {
+        System.out.println("encontrado");
+     };
+          
     }
     public void sort()
      {
      o.orden(lista);
        }
-    public boolean buscarLista(int elem)
-    {
-        a.buscar(lista,elem);
-    } 
+
     
       public void printMe(){
         System.out.println();
@@ -54,12 +63,9 @@ public class ListaInt {
             l.printMe();
             l.sort();
             l.setO(new Mergesort());
-            l.bus(new Binaria());
-            l.printMe();
-            int b=7;
-            a.
-            l.printMe(); 
-           
-      
+            l.setBusqueda(new Secuencial());
+            l.bus(test,6);
+            
+               
     }
 }

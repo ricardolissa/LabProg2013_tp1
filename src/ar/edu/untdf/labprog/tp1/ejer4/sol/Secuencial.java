@@ -12,10 +12,12 @@ package ar.edu.untdf.labprog.tp1.ejer4.sol;
 public class Secuencial implements Busqueda{
    
   
-  public boolean contains(Integer[] a, Integer b){
-      
-      for (Integer i:a) {
-      if (i==b){
+  public boolean buscar(int[] lista , int b)
+  {
+     for(int i:lista)
+               {
+      if (i==b)
+      {
         return true;
       }
     }
